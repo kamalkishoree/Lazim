@@ -1,4 +1,4 @@
-# AppTunix Test Project
+# Lazim Test Project
 
 This repository contains the code for the AppTunix test project. Below are the instructions for setting up and running the project for both web and API:
 
