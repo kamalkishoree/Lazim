@@ -25,7 +25,7 @@ class TaskController extends Controller
 
         $task = TodoTask::create(
             [
-                'title' => $request->input('name'),
+                'title' => $request->input('title'),
                 'description' => $request->input('description'),
                 'status' => $request->input('status'),
             ]

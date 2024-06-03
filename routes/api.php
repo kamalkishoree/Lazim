@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::post('/login', [LoginController::class, 'login'])->name('login');
 
 Route::middleware(['auth:api'])->group(function () {
+  Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
   Route::post('/task/create', [TaskController::class, 'create'])->name('task.create');
   Route::get('/tasks', [TaskController::class, 'index'])->name('tasks');
   Route::get('/task/{id}', [TaskController::class, 'view'])->name('task.view');
